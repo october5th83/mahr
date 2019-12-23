@@ -1,0 +1,118 @@
+﻿/*! nav.css v1.0.0 
+    Distributed: October5th83
+    Date: 11/2018
+    Description: Style with BOOTSTRAP.4 css
+*/
+
+/* 01./Main navigation
+-----------------------------------------------------------------------------*/
+.navbar-nav {
+    position: relative;
+    z-index: 1;
+}
+
+.navbar {
+    padding: 0;
+    width: 100%;
+    background: #DA1F3D;
+    box-shadow: 0 0 6px -2px #000;
+    transition: all 0.2s ease-in-out 0.2s;
+}
+
+.brand-wrapper {
+    position: absolute;
+    top: -42px;
+    left: 0;
+    z-index: 999;
+}
+
+.navbar-brand {
+    padding: 18px 0 18px;
+    padding: 0;
+}
+
+    .navbar-brand img {
+        height: 128px;
+    }
+
+.navbar-expand-md .navbar-nav .nav-item {
+    padding: 0 25px;
+}
+.navbar-expand-md .navbar-nav .nav-item:last-child {
+    padding: 0 0 0 25px;
+}
+.navbar-expand-md .navbar-nav .nav-link {
+    padding: 0;
+    line-height: 64px;
+    color: #fff;
+    font-size: 16px;
+    border-bottom: solid 3px transparent;
+    font-weight: 600;
+}
+
+    .navbar-expand-md .navbar-nav .nav-link:hover {
+        border-bottom: solid 3px #fda252;
+        color: #fff;
+    }
+
+.navbar-expand-md .navbar-nav .nav-item::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    height: 2px;
+    left: 50%;
+    right: 50%;
+    background: #009ee0;
+    transition: all 0.4s;
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    -webkit-opacity: 0;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=${opperc})";
+    filter: "alpha(opacity=${opperc})";
+}
+
+.dropdown-toggle::after {
+    margin-left: .355em;
+    vertical-align: .155em;
+}
+
+.dropdown-menu {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    margin-top: 0;
+    border: none;
+    border-bottom: solid 3px #009ee0;
+}
+
+    .dropdown-menu .dropdown-item {
+        width: 100%;
+        color: #666;
+        text-transform: capitalize;
+        white-space: nowrap;
+        transition: all 0.2s ease-in-out 0s;
+        display: block;
+        font-size: 14px;
+    }
+
+
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    content: "";
+    background: no-repeat center center;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    background-size: auto auto;
+    background-size: 100% 100%;
+}
+
+@media (max-width: 767px) {
+}
+
+
+@media (min-width: 768px) {
+}
